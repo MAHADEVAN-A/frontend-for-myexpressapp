@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Layout from '../../components/Layout'
 
 export default function Contact({data}){
-    const url = `http://localhost:5000/assets/contact/contact.svg`
+    const url = `https://mahadevan.herokuapp.com/assets/contact/contact.svg`
     return (
         <Layout>
             <Head>
@@ -40,7 +40,7 @@ export default function Contact({data}){
 
 
 export async function getStaticProps(){
-    const res = await fetch('http://localhost:5000/api/getcontact')
+    const res = await fetch('https://mahadevan.herokuapp.com/api/getcontact')
     const data = await res.json()
     console.log(data)
     if(!data){
