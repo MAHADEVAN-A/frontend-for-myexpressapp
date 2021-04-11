@@ -5,13 +5,13 @@ import Head from 'next/head'
 import Layout from '../../components/Layout'
 
 export default function Contact({data}){
-    const url = `https://mahadevan.herokuapp.com/assets/contact/contact.svg`
+    const url = `http://localhost:5000/assets/contact/contact.svg`
     return (
         <Layout>
             <Head>
                 <title>Contact</title>
             </Head>
-            <div className={styles.container}>
+            <div className={styles.ccontainer}>
                 <form className='form'>
                     <div className='form-control'>
                         <label htmlFor="name">Enter the name</label>
@@ -23,11 +23,11 @@ export default function Contact({data}){
                     </div>
                     <button type="submit">send</button>
                 </form>
-                <div className={styles.cimage}>
+                <div className='form-cimage'>
                     <img src={url}/>
                 </div>
-                <div className='form'>
-                    <div className='form-cont'>
+                <div className='form1'>
+                    <div className='form-cont1'>
                         <h2>{data.address}</h2>
                         <h2>{data.email}</h2>
                         <h2>{data.phno}</h2>
@@ -40,7 +40,7 @@ export default function Contact({data}){
 
 
 export async function getStaticProps(){
-    const res = await fetch('https://mahadevan.herokuapp.com/api/getcontact')
+    const res = await fetch('http://localhost:5000/api/getcontact')
     const data = await res.json()
     console.log(data)
     if(!data){

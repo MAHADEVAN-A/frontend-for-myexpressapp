@@ -12,7 +12,7 @@ export default function Projects({data}){
             <Head>
                 <title>Projects</title>
             </Head>
-            <div className={styles.container}>
+            <div className={styles.ccontainer}>
                {
                    data.map((item)=>{
                        console.log(item,'item');
@@ -25,7 +25,7 @@ export default function Projects({data}){
 }
 
 export async function getStaticProps(){
-    const res = await fetch('https://mahadevan.herokuapp.com/api/getproject')
+    const res = await fetch('http://localhost:5000/api/getproject')
     const data = await res.json()
     console.log(data)
     if(!data){

@@ -2,7 +2,7 @@
 import styles from '../styles/Home.module.css'
 import React from 'react'
 export default function Card({item,iurl}){
-    const url = `https://mahadevan.herokuapp.com/assets/${iurl}/${item.image}.svg`
+    const url = `http://localhost:5000/assets/${iurl}/${item.image}.svg`
     console.log(url,'url')
     return (
      

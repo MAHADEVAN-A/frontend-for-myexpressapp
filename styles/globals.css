@@ -1,29 +1,9 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  color: black;
+a{
   text-decoration: none;
+  color:black;
 }
-
-/* a:hover {
-  text-decoration: underline;
-} */
-
-img {
-  max-width: 100%;
-  display: block;
+body{
+  min-height:100vh;
 }
 
 /*
@@ -82,8 +62,8 @@ Variables
 .form {
   background: var(--clr-primary-7);
   max-width: var(--fixed-width);
-  margin: 0 auto;
-  margin-bottom: 4rem;
+  /* margin: 0 auto; */
+  /* margin-bottom: 4rem; */
   padding: 1rem 2rem;
   border-radius: var(--radius);
 }
@@ -92,6 +72,9 @@ Variables
   border-color: transparent;
   border-radius: var(--radius);
   padding: 0.25rem 0.5rem;
+}
+.form label{
+  margin-left:4px;
 }
 .form-control {
   margin: 0.5rem 0;
@@ -112,6 +95,31 @@ Variables
   cursor: pointer;
 }
 
-.form-cont{
+.form1 {
+  background: var(--clr-black);
+  color:white;
+  max-width: var(--fixed-width);
+  /* margin: 0 auto; */
+  /* margin-bottom: 4rem; */
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+}
+.form-cont1{
   text-align: center;
+}
+.form-cimage{
+  border: 2px solid black;
+  width: 25%;
+}
+.form-cimage img{
+  width: 100%;
+}
+
+@media (max-width:600px){
+  .form-cimage{
+    width:90%;
+  }
+  .form-cimage img{
+    width:100%;
+  }
 }
