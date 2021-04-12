@@ -11,15 +11,14 @@ export default function Navbar(){
                     </Link>
                 </h2>
             </div>
-            <div className={styles.menu}>
-                <ul className={styles.ul1}>
-                    <h2>
+                <ul className={styles.ul1}> 
                     <li>
-                        <Link href="/posts/Projects">
-                            <a>projects</a>
-                        </Link>
+                        <h2>
+                            <Link href="/posts/Projects">
+                                <a>projects</a>
+                            </Link>
+                        </h2>
                     </li>
-                    </h2>
                     <li>
                         <h2>
                             <li>
@@ -39,7 +38,6 @@ export default function Navbar(){
                         </h2>
                     </li>
                 </ul>
-            </div>
       </div>
     )
 }

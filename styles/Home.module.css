@@ -1,6 +1,6 @@
 
 .navbar{
-    width:80%;
+    width:90%;
     margin:10px auto;
     display:flex;
     justify-content: space-between;
@@ -9,21 +9,16 @@
     margin:5px 20px;
     text-align: center;
 }
-.menu{
-    min-width:100px;
-    width:60%;
-}
 .ul1{
-    margin:0 auto;
-    width:100%;
+    width:30%;
+    margin: 5px 0;
     display: flex;
     justify-content: space-around;
+    /* border:2px solid black; */
 }
 .ul1 li{
     display: inline-block;
-    display: flex;
     list-style: none;
-    margin:0 10px;
 }
 .ul1 li:hover{
     text-decoration: underline;
@@ -50,11 +45,10 @@
 .ccont{
     text-align: center;
 }
-.cimage{
-    width:80%;
-}
 .cimage img{
-    width:100%;
+    width:250px;
+    height:250px;
+    object-fit: contain;
 }
 
 .title{
@@ -72,16 +66,11 @@
         flex-direction: column;
         /* border:solid 2px black; */
     }
-    .menu{
-        width:90%;
-        margin:0;
-        padding:0;
-        /* border: 2px solid black; */
-    }
     .ul1{
-        width:80%;
-        margin:0;
-        justify-content: center;
+        width:100%;
+        margin:20px 0;
+        display: flex;
+        justify-content: space-around;
         /* border: 2px lightcoral solid; */
     }
     .container{
@@ -99,16 +88,7 @@
     }
     .card{
         width:90%;
-    }
-    .cimage{
-        width:90%;
-        margin:0;
-        /* border:2px black solid; */
-        padding:0;
-    }
-    .cimage img{
-        margin:0;
-        width:100%;
+        margin:50px 0;
     }
     .title{
         font-size: 2.5rem;

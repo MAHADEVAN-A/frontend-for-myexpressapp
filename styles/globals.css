@@ -1,3 +1,7 @@
+*{
+  margin:0;
+  padding:0;
+}
 a{
   text-decoration: none;
   color:black;
@@ -121,5 +125,29 @@ Variables
   }
   .form-cimage img{
     width:100%;
+  }
+}
+
+
+.skeleton:empty {
+  width: 27%;
+  display: block;
+  border:2px solid black;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 500px;
+  background-position: 0 0;
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 100% 0;
   }
 }

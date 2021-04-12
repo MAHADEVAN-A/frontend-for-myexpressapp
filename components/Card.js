@@ -6,7 +6,7 @@ export default function Card({item,iurl}){
     console.log(url,'url')
     return (
      
-            <div className={styles.card}>
+            <div className={styles.card} className='skeleton'>
                 <div className={styles.cimage}>
                     <img src={url}/>
                 </div>
