@@ -4,7 +4,7 @@ import styles from '../../styles/Home.module.css'
 import Head from 'next/head'
 import Card from '../../components/Card.js'
 import Layout from '../../components/Layout'
-
+import Skeleton from 'react-loading-skeleton'
 export default function Projects({data}){
     const imageurl='pimage'
     return (
@@ -16,7 +16,7 @@ export default function Projects({data}){
                {
                    data.map((item)=>{
                        console.log(item,'item');
-                       return <Card item={item} iurl={imageurl}/>
+                       return <Card item={item} iurl={imageurl}/>||<Skeleton/>
                    })
                }
             </div>

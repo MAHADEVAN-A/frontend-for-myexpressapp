@@ -1,21 +1,19 @@
 // import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Skeleton from 'react-loading-skeleton'
 import React from 'react'
 export default function Card({item,iurl}){
     const url = `https://mahadevan.herokuapp.com/assets/${iurl}/${item.image}.svg`
     console.log(url,'url')
     return(
-           item ? 
             <div className={styles.card}>
                 <div className={styles.cimage}>
-                    <img src={url}/>
+                    {<img src={url}/>||<Skeleton/>}
                 </div>
                 <div className={styles.ccont}>
-                    <h2>{item.content}</h2>
+                    <h2>{item.content || <Skeleton/>}</h2>
                 </div>
-            </div> 
-            :<div className='skeleton'></div>
-           
+            </div>      
     )
 }
 
