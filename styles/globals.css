@@ -112,7 +112,7 @@ Variables
   text-align: center;
 }
 .form-cimage{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 25%;
 }
 .form-cimage img{
@@ -129,10 +129,11 @@ Variables
 }
 
 
-.skeleton:empty {
-  width: 27%;
+.skeleton {
+  width: 300px;
+  height: 350px;
   display: block;
-  border:2px solid black;
+  /* border:2px solid black; */
   background: linear-gradient(
       to right,
       rgba(255, 255, 255, 0),

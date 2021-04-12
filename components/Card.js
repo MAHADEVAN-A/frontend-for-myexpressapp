@@ -4,9 +4,9 @@ import React from 'react'
 export default function Card({item,iurl}){
     const url = `https://mahadevan.herokuapp.com/assets/${iurl}/${item.image}.svg`
     console.log(url,'url')
-    return (
-     
-            <div className={styles.card} className='skeleton'>
+    return(
+           item ? 
+            <div className={styles.card}>
                 <div className={styles.cimage}>
                     <img src={url}/>
                 </div>
@@ -14,8 +14,9 @@ export default function Card({item,iurl}){
                     <h2>{item.content}</h2>
                 </div>
             </div> 
+            :<div className='skeleton'></div>
+           
     )
-    
 }
 
 
