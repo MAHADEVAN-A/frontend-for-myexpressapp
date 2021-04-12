@@ -8,7 +8,7 @@ export default function Card({item,iurl}){
     return(
             <div className={styles.card}>
                 <div className={styles.cimage}>
-                    {<img src={url}/>||<Skeleton/>}
+                    {<img src={url}/>||<Skeleton width={300} height={300}/>}
                 </div>
                 <div className={styles.ccont}>
                     <h2>{item.content || <Skeleton/>}</h2>

@@ -15,8 +15,7 @@ export default function Projects({data}){
             <div className={styles.ccontainer}>
                {
                    data.map((item)=>{
-                       console.log(item,'item');
-                       return <Card item={item} iurl={imageurl}/>||<Skeleton/>
+                       return <Card item={item} iurl={imageurl}/>||<Skeleton width={300} height={300}/>
                    })
                }
             </div>
