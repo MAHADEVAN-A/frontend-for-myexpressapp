@@ -15,7 +15,7 @@ export default function Projects({data}){
             <div className={styles.ccontainer}>
                {
                    data.map((item)=>{
-                       return <Card item={item} iurl={imageurl}/>||<Skeleton width={300} height={300}/>
+                       return <Card key={item.id} detail="posts" item={item} iurl={imageurl}/>||<Skeleton width={300} height={300}/>
                    })
                }
             </div>
@@ -25,6 +25,7 @@ export default function Projects({data}){
 
 export async function getStaticProps(){
     const res = await fetch('https://mahadevan.herokuapp.com/api/getproject')
+    // const res = await fetch('http://localhost:5000/api/getproject')
     const data = await res.json()
     console.log(data)
     if(!data){

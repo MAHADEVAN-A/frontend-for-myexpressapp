@@ -16,7 +16,7 @@ export default function Blogs({data}){
                {
                    data.map((item)=>{
                        console.log(item,'item');
-                       return <Card item={item} iurl={imageurl}/>
+                       return <Card item={item} detail="details" iurl={imageurl}/>
                    })
                }
             </div>
@@ -26,6 +26,7 @@ export default function Blogs({data}){
 
 export async function getStaticProps(){
     const res = await fetch('https://mahadevan.herokuapp.com/api/getblog')
+    // const res = await fetch('http://localhost:5000/api/getblog')
     const data = await res.json()
     console.log(data)
     if(!data){
