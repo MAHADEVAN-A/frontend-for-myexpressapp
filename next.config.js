@@ -1,5 +1,7 @@
-module.exports ={
-    images:{
-        domain:['localhost:5000']
-    }
-}
+// next.config.js
+module.exports = {
+    images: {
+      domains: ['mahadevan.herokuapp.com','localhost'],
+    },
+  }
+  
