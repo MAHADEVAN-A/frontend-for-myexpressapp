@@ -12,10 +12,10 @@ export default function OZsum(){
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         />
-        <script src="/javascript.js"></script>
+        <script type="text/javascript" src="/javascript.js"></script>
         </Head>
         <nav>
-            <input type="checkbox" onChange="handleChange(this)" id="check" />
+            <input type="checkbox" onchange="handleChange(this)" id="check" />
             <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
             </label>
@@ -166,6 +166,7 @@ export default function OZsum(){
                 <a href="https://au.linkedin.com/in/ozsum-accouting-and-business-services-aa685b205"><i class="fab fa-linkedin"></i></a>
             </div>
         </section>
+        <script type="text/javascript" src="/javascript.js"></script>
     </div>
     )
 }
