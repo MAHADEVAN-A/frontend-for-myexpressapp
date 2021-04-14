@@ -13,22 +13,22 @@ export default function Contact({data}){
                 <title>Contact</title>
             </Head>
             <div className={styles.ccontainer}>
-                <form className='form'>
-                    <div className='form-control'>
+                <form className={styles.form}>
+                    <div className={styles.formcontrol}>
                         <label htmlFor="name">Enter the name</label>
                         <input name="name" type="text" />
                     </div>
-                    <div className='form-control'>
+                    <div className={styles.formcontrol}>
                         <label htmlFor="email">Enter the email</label>
                         <input name="email" type="text" />
                     </div>
                     <button type="submit">send</button>
                 </form>
-                <div className='form-cimage'>
+                <div className={styles.formcimage}>
                     <ImageComp isrc={url} />
                 </div>
-                <div className='form1'>
-                    <div className='form-cont1'>
+                <div className={styles.form1}>
+                    <div className={styles.formcont1}>
                         <h2>{data.address}</h2>
                         <h2>{data.email}</h2>
                         <h2>{data.phno}</h2>
