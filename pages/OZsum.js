@@ -3,19 +3,10 @@ import Head from 'next/head'
 // import Image from 'next/image'
 export default function OZsum(){
     return(
+        <>
     <div>
-        <Head>
-        <title>My First Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/OZsum.css"/>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        />
-        <script type="text/javascript" src="/javascript.js"></script>
-        </Head>
         <nav>
-            <input type="checkbox" onchange="handleChange(this)" id="check" />
+            <input type="checkbox" id="check" />
             <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
             </label>
@@ -166,10 +157,23 @@ export default function OZsum(){
                 <a href="https://au.linkedin.com/in/ozsum-accouting-and-business-services-aa685b205"><i class="fab fa-linkedin"></i></a>
             </div>
         </section>
-        <script type="text/javascript" src="/javascript.js"></script>
     </div>
+<Head>
+<title>My First Next App</title>
+<link rel="icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/OZsum.css"/>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+/>
+<script type="text/javascript" src="/javas.js"></script>
+</Head>
+</>
     )
+    
 }
+
+
 
 
 // const ImageComp= (props)=>{
