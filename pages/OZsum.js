@@ -4,17 +4,19 @@ import Head from 'next/head'
 export default function OZsum(){
     return(
         <>
-    <div>
+    <div class="homehome">
+        <div class="logoimg" >
+        <img src="/OZsumlogo.png"/></div>
         <nav>
             <input type="checkbox" id="check" />
             <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
             </label>
             <ul id="llink">
-            <li><a href="#service">Services</a></li>
-            <li><a href="#feature">Features</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+            <li id="llinks"><a href="#service">Services</a></li>
+            <li id="llinks"><a href="#feature">Features</a></li>
+            <li id="llinks"><a href="#contact">Contact</a></li>
+            <li id="llinks"><a href="#about">About</a></li>
             </ul>
         </nav>
         <div class="bannerr">
@@ -65,6 +67,9 @@ export default function OZsum(){
                     </li>
                 </ul>
             </div>
+            <div class="action">
+                <a href="#"><i class="fas fa-arrow-up"></i></a>
+            </div>
         </section>
         <div class="conttool">
             <h1>TOOLS</h1>
@@ -112,6 +117,9 @@ export default function OZsum(){
                     <p>Nominal pricing based on a “What-You-Use is What-You-Pay” basis</p>
                 </div>
             </div>
+            <div class="action">
+                <a href="#"><i class="fas fa-arrow-up"></i></a>
+            </div>
         </div>
         <div id="contact" class="contact">
             <h1>CONTACT us</h1>
@@ -139,6 +147,9 @@ export default function OZsum(){
                         </li>
                     </ul>
                     </form>
+            </div>
+            <div class="action">
+                <a href="#"><i class="fas fa-arrow-up"></i></a>
             </div>
         </div>
         <section class="section2" id="about">
