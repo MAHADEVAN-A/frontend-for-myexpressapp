@@ -8,6 +8,16 @@
   html{
     scroll-behavior: smooth;
   }
+  .logoimg{
+    position:absolute;
+    top:3%;
+    left:3%;
+    width:100px;
+    z-index:1345666;
+  }
+  .logoimg img{
+    width:100%;
+  }
   :root {
     /* dark shades of primary color*/
     --clr-primary-1: hsl(205, 86%, 17%);
@@ -186,15 +196,16 @@
       color:rgb(50, 43, 43);
       transition: .5s;
     }
-    #check:checked ~ ul{
-      left: 0;
-    }
-    
+  }
+
+  .navtoggle{
+    left:0;
   }
 
 
   section{
     /* border:2px solid black; */
+    position: relative;
       min-height:100vh;
       padding:60px;
       font-family:sans-serif;
@@ -285,6 +296,10 @@ section .content ul li i{
         /* min-height:100vh; */
           padding:10px 25px;
       }
+      section>.action{
+    bottom:1%;
+  
+      }
       section .content span{
         font-weight:300;
           font-size:22px;
@@ -304,6 +319,9 @@ section .content ul li i{
         /* min-height:100vh; */
           padding:10px 25px;
       }
+      .section2>.action{
+        bottom:3%;
+      }
       .section2 .content span{
           font-weight:300;
           font-size:21px;
@@ -313,7 +331,15 @@ section .content ul li i{
       }
   }
   .action{
-    /* margin:40px; */
+    position:absolute;
+    left:3%;
+    /* bottom:3%; */
+  }
+  .cont>.action{
+    bottom:2%;
+  }
+  .contact>.action{
+    bottom:5%;
   }
   .action a{
     text-decoration: none;
@@ -327,6 +353,8 @@ section .content ul li i{
   }
 
   .cont{
+    position: relative;
+    /* border:2px solid black; */
     font-family: sans-serif;
     min-height:100vh;
     background-color: rgb(206, 226, 226);
@@ -386,6 +414,7 @@ section .content ul li i{
 
 
 .contact{
+  position: relative;
   min-height:100vh;
   display: flex;
   flex-direction: column;
@@ -495,6 +524,11 @@ color:red;
     margin:0;
     padding:0;
     flex-direction: column;
+}
+
+.contact>.action{
+  left:80%;
+  /* right:39%; */
 }
 .form-style-1{
     width:100%;
