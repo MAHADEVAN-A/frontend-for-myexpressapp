@@ -4,9 +4,7 @@ import Head from 'next/head'
 export default function OZsum(){
     return(
         <>
-    <div class="homehome">
-        <div class="logoimg" >
-        <img src="/OZsumlogo.png"/></div>
+<div class="homehome">
         <nav>
             <input type="checkbox" id="check" />
             <label for="check" class="checkbtn">
@@ -21,9 +19,12 @@ export default function OZsum(){
         </nav>
         <div class="bannerr">
             <div class="content">
-                <h1>OZsum</h1>
+                <div class="logoimg" >
+                <img src="/OZsumlogo.png"/>
+                </div>
+                {/* <!-- <h1>OZsum</h1>
                 <h2>Accounting & Business Services</h2>
-                <span>IN PURSUIT OF QUALITY</span>
+                <span>IN PURSUIT OF QUALITY</span> --> */}
             </div>
         </div>
         <section id="service">
@@ -73,6 +74,7 @@ export default function OZsum(){
         </section>
         <div class="conttool">
             <h1>TOOLS</h1>
+            {/* <!-- <marquee behavior="alternate" direction="left"></marquee> --> */}
             <div class="tools">
                 <div class="itimg"><img src="/app1.png" /></div>
                 <div class="itimg"><img src="/app2.png" /></div>
