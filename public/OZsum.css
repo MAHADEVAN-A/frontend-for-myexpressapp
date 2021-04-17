@@ -12,7 +12,7 @@
     /* position:absolute;
     top:3%;
     left:3%; */
-    width:400px;
+    width:700px;
     margin:0 auto;
     /* z-index:1345666; */
   }
@@ -289,7 +289,7 @@ section .content ul li i{
 
   @media (max-width:589px){
        .bannerr .content .logoimg{
-         width:300px;
+         width:350px;
        }
       .bannerr .content{
           padding:0 10px;
