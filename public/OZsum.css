@@ -9,11 +9,12 @@
     scroll-behavior: smooth;
   }
   .logoimg{
-    position:absolute;
+    /* position:absolute;
     top:3%;
-    left:3%;
-    width:100px;
-    z-index:1345666;
+    left:3%; */
+    width:400px;
+    margin:0 auto;
+    /* z-index:1345666; */
   }
   .logoimg img{
     width:100%;
@@ -63,7 +64,7 @@
   .bannerr{
       position: relative;
       height:100vh;
-      background-image: url(./pexels-indra-gunawan-313032.jpg);
+      background-image: url(./building1.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -75,7 +76,7 @@
       line-height:80px;
   }
   .bannerr::before{
-    background-color: rgba(116, 99, 99, 0.37);
+    background-color: rgba(20, 20, 20, 0.37);
     content: '';
     display: block;
     height: 100%;
@@ -84,6 +85,10 @@
   }
   .bannerr .content{
       color:white;
+      padding:20px;
+      /* background-color: rgba(15, 17, 17, 0.1); */
+      border-radius: 10px;
+      /* border:2px solid black; */
       font-weight: bolder;
       z-index:9;
   }
@@ -107,7 +112,8 @@
   nav{
     background: transparent;
     position: absolute;
-    height: 80px;
+    font-family: sans-serif;
+    height: 100px;
     width: 100%;
     z-index: 99;
   }
@@ -124,19 +130,21 @@
   }
   nav ul li{
     display: inline-block;
-    line-height: 80px;
+    line-height: 90px;
     margin: 0 5px;
   }
   nav ul li a{
-    color: white;
+    /* color: rgb(234, 220, 141); */
+    color:white;
+    letter-spacing: 3px;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
   }
-  a.active,a:hover{
+   nav  a.active,a:hover{
     background: rgb(234, 220, 141);
-    color:rgb(50, 43, 43);
+    color: rgb(23, 16, 16);
     transition: .5s;
   }
   .checkbtn{
@@ -209,15 +217,18 @@
       min-height:100vh;
       padding:60px;
       font-family:sans-serif;
-      background-color: var(--clr-grey-3);
-      color:#ddd;
+      /* background: rgb(234, 220, 141); */
+      color:var(--clr-black);
   }
   .section2{
       min-height: 100vh;
-      background-color:#998c8c;
+      /* background-color: var(--clr-grey-1); */
       padding:80px 100px;
-      color:rgb(24, 20, 20);
+      color:var(--clr-black);
   }
+  /* .section2 .slink a:hover{
+    background-color: white;
+  } */
   section .title{
       font-size: 28px;
       text-align: center;
@@ -242,7 +253,7 @@ section .content ul li{
   text-align: center;
   width:250px;
   height: 200px;
-  background-color: white;
+  background: rgb(234, 220, 141);
   border-radius: 10px;
   margin:20px 0;
   color:var(--clr-black);
@@ -255,7 +266,7 @@ section .content ul li i{
     transform: scale(1.05);
   }
   section .content{
-      font-size:18px;
+      font-size:14px;
       font-weight:200;
   }
   .section2 .content span{
@@ -263,7 +274,7 @@ section .content ul li i{
   }
   section .content span{
       display: block;
-      font-size:38px;
+      font-size:28px;
       margin-bottom:50px;
   }
   section .content ul h2{
@@ -277,6 +288,9 @@ section .content ul li i{
   }
 
   @media (max-width:589px){
+       .bannerr .content .logoimg{
+         width:300px;
+       }
       .bannerr .content{
           padding:0 10px;
       }
@@ -357,7 +371,7 @@ section .content ul li i{
     /* border:2px solid black; */
     font-family: sans-serif;
     min-height:100vh;
-    background-color: rgb(206, 226, 226);
+    /* background-color: rgb(206, 226, 226); */
     padding:150px 0;
 }
 .cont h1{
@@ -378,7 +392,7 @@ section .content ul li i{
 }
 .item{
     color:black;
-    background-color:white;
+    background: rgb(234, 220, 141);
     display: flex;
     flex-direction: column;
     box-shadow: var(--dark-shadow);
@@ -414,15 +428,19 @@ section .content ul li i{
 
 
 .contact{
+  width:80%;
+  margin:0 auto;
+  border-radius: 10px;
   position: relative;
   min-height:100vh;
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color:var(--clr-white);
+  color:var(--clr-black);
   /* border:2px solid black; */
-  background-color: var(--clr-black);
+    background: rgb(234, 220, 141);
 }
 .form-style-1 {
 margin:10px auto;
@@ -436,7 +454,7 @@ font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 padding: 0;
 display: block;
 list-style: none;
-margin: 10px 0 0 0;
+margin: 20px 0;
 }
 .form-style-1 label{
 margin:0 0 3px 0;
@@ -459,7 +477,7 @@ box-sizing: border-box;
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 border:1px solid #BEBEBE;
-border-radius: 10px;
+/* border-radius: 10px; */
 margin:10px 0;
 padding: 7px;
 /* margin:0px; */
@@ -495,13 +513,15 @@ width: 100%;
 height: 100px;
 }
 .form-style-1 input[type=submit], .form-style-1 input[type=button]{
-background:var(--clr-primary-1);
+background:var(--clr-black);
 padding: 8px 15px 8px 15px;
+font-size: 18px;
 border: none;
 color: #fff;
 }
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
-background: var(--clr-primary-2);
+background: var(--clr-white);
+color:var(--clr-black);
 box-shadow:none;
 -moz-box-shadow:none;
 -webkit-box-shadow:none;
@@ -520,8 +540,10 @@ color:red;
 .contact{
   min-height:80vh;
     display: block;
+    width:90%;
     /* border:2px solid black; */
-    margin:0;
+    margin:70px auto;
+    border-radius: 10px;
     padding:0;
     flex-direction: column;
 }
@@ -540,14 +562,17 @@ color:red;
 
 
 .tools{
-  height:50vh;
+  /* height:100%; */
   display: flex;
+  margin-top:60px;
   align-items: center;
   justify-content: space-around;
   background-color: var(--clr-white);
 }
 
 .conttool{
+  margin:50px 0;
+  min-height:50vh;
   font-family: sans-serif;
   /* border:2px solid black; */
 }
@@ -566,9 +591,10 @@ color:red;
 
 @media(max-width:589px){
   .tools{
-      min-height:100vh;
+      /* min-height:100vh; */
+      /* height:100%; */
       padding:20px 0;
-      gap:30px;
+      gap:60px;
       flex-direction: column;
   }
 }
@@ -576,9 +602,8 @@ color:red;
 .slink a{
   color:black;
   font-size: 40px;
+  margin:0;
+  padding:0;
   text-decoration: none;
   float: right;
-}
-.slink a:hover{
-  color:black;
 }
