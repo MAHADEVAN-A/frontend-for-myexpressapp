@@ -32,7 +32,6 @@ export default function OZsum(){
                 <h1>SERVICES</h1>
             </div>
             <div class="content">         
-                <span>7 years of experience in diverse lines of work like Australian accounting, taxation, book-keeping, and internal audit, enjoying proficiency in MS Office Suite and accounting software tools like XERO, XPM, MYOB AR, MYOB AE,  Quickbooks, etc. My work experiences are as follows:</span>
                 <ul>
                     <li>
                         <i class="fas fa-money-check"></i>
@@ -152,6 +151,11 @@ export default function OZsum(){
             </div>
             <div class="action">
                 <a href="#"><i class="fas fa-arrow-up"></i></a>
+            </div>
+            <div class="slink">
+                <a href="https://au.linkedin.com/in/ozsum-accouting-and-business-services-aa685b205"><i class="fab fa-linkedin"></i></a>
+                <a><i class="fas fa-envelope"><div class="conten">ozsum.services@ outlook.com.au</div></i></a>
+                <a><i class="fas fa-phone-square-alt"><div class="conten">+61414411992</div></i></a>
             </div>
         </div>
         <section class="section2" id="about">
