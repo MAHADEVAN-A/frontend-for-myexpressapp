@@ -633,6 +633,8 @@ color:red;
 
 @media (max-width: 599px){
   .contact > .slink{
+    padding:0 1rem;
+    /*margin:0 1rem;*/
     flex-direction: column;
     left:10px;
   }
