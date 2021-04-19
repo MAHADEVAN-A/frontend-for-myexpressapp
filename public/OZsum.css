@@ -124,9 +124,12 @@
     /*outline: 1px solid red;*/
 }
 
+  html{
+    scroll-behavior: smooth;
+  }
+
 body{
    font-family: 'Roboto', sans-serif;
-   scroll-behavior: smooth;
 }
 
 /*NAVBAR*/
