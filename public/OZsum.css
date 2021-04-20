@@ -455,12 +455,12 @@ span{
         width:100%;
         height:100vh;
         z-index: 50;
-        background-color:rgb(50, 43, 43);
+        background-color:rgba(210, 228, 230);
         display:flex;
         flex-direction: column;
     }
     .navbar-menu a{
-        color:rgb(234, 220, 141);
+        color:white;
     }
     /*.navbar-menu .anchor:hover{
         background-color: white;
