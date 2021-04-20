@@ -460,7 +460,7 @@ span{
         flex-direction: column;
     }
     .navbar-menu a{
-        color:white;
+        color:black;
     }
     /*.navbar-menu .anchor:hover{
         background-color: white;
