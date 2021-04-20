@@ -1,6 +1,5 @@
 
-
- :root {
+:root {
     /* dark shades of primary color*/
     --clr-primary-1: hsl(205, 86%, 17%);
     --clr-primary-2: hsl(205, 77%, 27%);
@@ -124,12 +123,9 @@
     /*outline: 1px solid red;*/
 }
 
-  html{
-    scroll-behavior: smooth;
-  }
-
 body{
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Ubuntu', sans-serif;
+   scroll-behavior: smooth;
 }
 
 /*NAVBAR*/
@@ -141,7 +137,7 @@ body{
     background:transparent;
     display: flex;
     justify-content: flex-end;
-    background-color: rgba(225,225,225,.5);
+    background-color: rgba(210, 228, 230);
 }
 
 .navbar-menu{
@@ -157,7 +153,7 @@ body{
 .navbar-menu a{
     padding:0.4rem 0.7rem;
     border-radius:10px;
-    font-size:1.5rem;
+    font-size:1.2rem;
     color:black;
     text-decoration: none;
 }
@@ -239,7 +235,10 @@ body{
 /*SERVICE*/
 
 .section{
-    padding:3rem 2rem;
+    width:95%;
+    max-width:1300px;
+    margin:0 auto;
+    padding:3rem 0;
     background-color: white;
 }
 
@@ -260,7 +259,7 @@ body{
 
 .section-content .box{
     width:22%;
-    min-width:300px;
+    min-width:270px;
     margin:1.5rem 0;
     padding:3.5rem 1.5rem;
     font-size:1.3rem;
@@ -325,6 +324,11 @@ body{
 
 .contact{
     padding:3rem 1rem;
+    width:90%;
+    max-width:700px;
+    margin:0 auto;
+    background-color: rgba(210, 228, 230);
+    border-radius: 10px;
     /*display: flex;*/
     /*flex-direction: column;*/
     /*align-items: center;*/
@@ -367,10 +371,15 @@ body{
 
 .contact-form .action button{
     padding:0.7rem 2rem;
-    background-color:rgba(210, 228, 230);
+    background-color:white;
     border-radius:10px;
     /*outline:none;*/
     border:none;
+}
+
+.contact-form .action button:hover{
+    background-color: rgba(0,0,0,.7);
+    color:white;
 }
 
 .contact-form .contact-links{
@@ -414,12 +423,12 @@ a{
 /*ABOUT*/
 
 .section1-content{
-    width:70%;
-    min-width:330px;
+    width:95%;
+    max-width:800px;
     margin:0 auto;
     font-size:1.3rem;
     margin-bottom: 5rem;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 span{
@@ -428,6 +437,9 @@ span{
 
 
 @media(max-width:597px){
+    html{
+        font-size:12px;
+    }
     .navbar{
         margin:0;
         padding:0;
